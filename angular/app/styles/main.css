@@ -1,0 +1,15 @@
+/* Space out content a bit */
+body {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+a.link {
+    text-decoration: none;
+    margin-right: 15px;
+    cursor: pointer;
+}

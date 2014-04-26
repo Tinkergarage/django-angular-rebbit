@@ -1,0 +1,18 @@
+<h1>Post a new link in Rebbit!</h1>
+<form class="form" ng-submit="save(link)">
+	<div class="form-group">
+		<label>Title</label>
+		<input class="form-control" type="text" required ng-model="link.title">
+	</div>
+	<div class="form-group">
+		<label>URL</label>
+		<input class="form-control" type="url" required ng-model="link.url">
+	</div>
+	<div class="checkbox">
+		<label>
+			<input type="checkbox" ng-model="link.nsfw"> <b>NSFW</b>
+		</label>
+	</div>
+	<button type="submit" class="btn btn-success">Add a new element!</button>
+	<a class="btn btn-default" href="#/">Go back</a>
+</div>

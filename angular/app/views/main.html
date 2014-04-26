@@ -1,0 +1,18 @@
+<div class="row">
+  <h4>List of all submitted links</h4>
+  <a class="btn btn-default" href="#/add/">Add</a>
+</div>
+
+<div class="row" data-ng-repeat="link in links">
+    <div class="col-md-1">
+        <a class="link" data-ng-click="upvote(link)"><i class="fa fa-arrow-up"></i></a>
+        <a class="link" data-ng-click="downvote(link)"><i class="fa fa-arrow-down"></i></a>
+    </div>
+    <div class="col-md-1">
+        {{link.upvotes - link.downvotes}}
+    </div>
+    <div class="col-md-10">
+        <a data-ng-href="{{link.url}}">{{link.title}}</a>
+        <span class="label label-danger" data-ng-show="link.nsfw">NSFW</span>
+    </div>
+</div>
