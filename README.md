@@ -34,6 +34,6 @@ Test everything is ok by running the local HTTP server:
 
 Visit the relevant parts of the project:
 
-    * http://localhost:8000/
-    * http://localhost:8000/admin
-    * http://localhost:8000/api
+ * http://localhost:8000/
+ * http://localhost:8000/admin
+ * http://localhost:8000/api
