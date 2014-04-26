@@ -3,6 +3,8 @@ appdays2014
 
 Workshop "Fullstack developers with Django and AngularJS", Appdays @Pordenone 26/04/2014
 
+[Link to the slides](https://docs.google.com/presentation/d/1GZX2vFxMe_T-wYoztjKcTHr9trr8XedV4uDVZbVZHHA/edit?usp=sharing)
+
 Backend
 -------
 
