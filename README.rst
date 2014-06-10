@@ -67,7 +67,7 @@ The following have to be installed on your system before starting:
 
 While your runserver is up and running, enter to directory:
 
- .. code-block:: bash
+.. code-block:: bash
 
     $ cd angular
 
