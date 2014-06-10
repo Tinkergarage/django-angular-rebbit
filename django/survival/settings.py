@@ -1,5 +1,5 @@
 """
-Django settings for appdays project.
+Django settings for survival project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.6/topics/settings/
@@ -52,9 +52,9 @@ MIDDLEWARE_CLASSES = (
     'corsheaders.middleware.CorsMiddleware',
 )
 
-ROOT_URLCONF = 'appdays.urls'
+ROOT_URLCONF = 'survival.urls'
 
-WSGI_APPLICATION = 'appdays.wsgi.application'
+WSGI_APPLICATION = 'survival.wsgi.application'
 
 
 # Database
