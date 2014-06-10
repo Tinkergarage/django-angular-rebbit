@@ -39,16 +39,46 @@ Create the database:
 
 .. code-block:: bash
 
-    $ python manage.py syncdb
+    $ python django/manage.py syncdb
 
 Test everything is ok by running the local HTTP server:
 
 .. code-block:: bash
 
-    $ python manage.py runserver
+    $ python django/manage.py runserver
 
 You can visit the relevant parts of the project from the following urls:
 
 * http://localhost:8000/ (a simple homepage)
 * http://localhost:8000/admin (admin to manage models)
 * http://localhost:8000/api (api root endpoint)
+
+Frontend
+--------
+
+The following have to be installed on your system before starting:
+
+* node 0.10.x (via `NVM`_)
+* grunt-cli
+* bower
+* yo (Yeoman)
+
+.. _NVM: https://github.com/creationix/nvm
+
+While your runserver is up and running, enter to directory:
+
+ .. code-block:: bash
+
+    $ cd angular
+
+Install all dependencies for build system and project:
+
+.. code-block:: bash
+
+    $ npm install && bower install
+
+Just run grunt to serve angular single page application:
+
+.. code-block:: bash
+
+    $ grunt serve
