@@ -1,41 +1,54 @@
-appdays2014
-===========
+================================
+Django-AngularJS ultimate weapon
+================================
 
-Workshop "Fullstack developers with Django and AngularJS", Appdays @Pordenone 26/04/2014
+Workshop "Survival course for modern developers: go full-stack with Django and AngularJS"
 
-[Link to the slides](https://docs.google.com/presentation/d/1GZX2vFxMe_T-wYoztjKcTHr9trr8XedV4uDVZbVZHHA/edit?usp=sharing)
+Here you can find some `slides`_
+
+.. _slides: https://docs.google.com/presentation/d/1GZX2vFxMe_T-wYoztjKcTHr9trr8XedV4uDVZbVZHHA/edit?usp=sharing
 
 Backend
 -------
 
 The following have to be installed on your system before starting:
 
- * python 2.7
- * virtualenvwrapper
+* python 2.7
+* virtualenvwrapper
 
 Clone this git repository and enter the directory:
 
-    git clone https://github.com/Tinkergarage/appdays2014.git
-    cd appdays2014
+.. code-block:: bash
+
+    $ git clone https://github.com/Tinkergarage/django-angular-rebbit.git
+    $ cd django-angular-rebbit
 
 At the command line, create a Python virtual environment:
 
-    mkvirtualenv appdays
+.. code-block:: bash
+
+    $ mkvirtualenv django-angular-rebbit
 
 Then install required libraries and packages:
 
-    pip install -r requirements.txt
+.. code-block:: bash
+
+    $ pip install -r requirements.txt
 
 Create the database:
 
-    python manage.py syncdb
+.. code-block:: bash
+
+    $ python manage.py syncdb
 
 Test everything is ok by running the local HTTP server:
 
-    python manage.py runserver
+.. code-block:: bash
 
-Visit the relevant parts of the project:
+    $ python manage.py runserver
 
- * http://localhost:8000/
- * http://localhost:8000/admin
- * http://localhost:8000/api
+You can visit the relevant parts of the project from the following urls:
+
+* http://localhost:8000/ (a simple homepage)
+* http://localhost:8000/admin (admin to manage models)
+* http://localhost:8000/api (api root endpoint)
