@@ -6,12 +6,14 @@
   webApp.config(function ($routeProvider) {
     $routeProvider.when('/', {
       templateUrl: 'views/main.html',
-      controller: 'MainCtrl'
+      controller: 'PostListCtrl',
+      controllerAs: 'rebbit'
     });
 
     $routeProvider.when('/add/', {
       templateUrl: 'views/add.html',
-      controller: 'AddCtrl'
+      controller: 'AddPostCtrl',
+      controllerAs: 'post'
     });
 
     $routeProvider.otherwise({
