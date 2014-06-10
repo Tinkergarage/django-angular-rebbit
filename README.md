@@ -24,7 +24,7 @@ At the command line, create a Python virtual environment:
 
 Then install required libraries and packages:
 
-    pip install django djangorestframework django-cors-header django-filter
+    pip install -r requirements.txt
 
 Create the database:
 
