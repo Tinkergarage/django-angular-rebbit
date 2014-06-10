@@ -10,6 +10,14 @@ body {
 
 a.link {
     text-decoration: none;
-    margin-right: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
     cursor: pointer;
+}
+
+.col-controls {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

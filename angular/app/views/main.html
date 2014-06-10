@@ -3,13 +3,12 @@
   <a class="btn btn-default" href="#/add/">Add</a>
 </div>
 
-<div class="row" data-ng-repeat="link in links">
-    <div class="col-md-1">
+<div class="row" data-ng-repeat="link in links | orderBy: 'downvotes - upvotes'">
+    <div class="col-md-2 col-controls">
+        {{ $index + 1 }}.
         <a class="link" data-ng-click="upvote(link)"><i class="fa fa-arrow-up"></i></a>
         <a class="link" data-ng-click="downvote(link)"><i class="fa fa-arrow-down"></i></a>
-    </div>
-    <div class="col-md-1">
-        {{link.upvotes - link.downvotes}}
+        ({{link.upvotes - link.downvotes}})
     </div>
     <div class="col-md-10">
         <a data-ng-href="{{link.url}}">{{link.title}}</a>
